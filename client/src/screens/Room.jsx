@@ -172,14 +172,14 @@ const RoomPage = () => {
           </button>
         </div>
       )}
-      <div className="flex">
+      <div className="flex flex-col gap-y-5 sm:flex">
         {myStream && (
           <div className="flex flex-col">
             <h1 className="ml-4">My stream</h1>
             <ReactPlayer
               url={myStream}
-              height="500px"
-              width="800px"
+              height="300px"
+              width="500px"
               playing
               muted
             />
@@ -190,8 +190,8 @@ const RoomPage = () => {
             <h1>Remote stream</h1>
             <ReactPlayer
               url={remoteStream}
-              height="500px"
-              width="800px"
+              height="300px"
+              width="500px"
               playing
               muted
             />
